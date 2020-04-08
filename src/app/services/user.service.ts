@@ -5,7 +5,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 // 2. Import the User object (model)
-import { User } from '../models/user';
+import { User } from '../../models/user';
 
 // 3. Create a JSON header to be attached to outbound post requests
 const httpOptions = {
@@ -16,6 +16,9 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class UserService {
+  test() {
+    throw new Error("Method not implemented.");
+  }
   // 4. Set the domain portion of the url
   private url:string = 'http://localhost:3000/api/auth';
 

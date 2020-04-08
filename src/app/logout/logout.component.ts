@@ -7,13 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LogoutComponent implements OnInit {
 
-  constructor(private userService: UserService) {
-    this.userService.test().subscribe(
-      (response)=>{
-        console.log(response);
-      }
-    );
-  }
+  constructor() { }
 
   ngOnInit(): void {
   }
